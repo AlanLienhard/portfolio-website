@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Alan Lienhard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+      <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+</head>
+<body>
+     <header class="header">
+        <nav class="nav-bar">
+            <a href="#" class="logo">Alan Lienhard</a> 
+            <div class="nav-links">
+                   <a href="#about" class="nav-link" data-section="about">Über mich</a>
+                   <a href="#projects" class="nav-link" data-section="projects" >Projekte</a>
+    <a href="#skills" class="nav-link" data-section="skills">Fähigkeiten</a>
+    
+    <a href="#contact" class="nav-link" data-section="contact">Kontakt</a>
+    <a href="./Dokumente/Lebenslauf.pdf" download="Lebenslauf.pdf" class="btn download-btn">Lebenslauf (PDF)</a>
+    <a href="https://github.com/AlanLienhard" target="_blank" class="btn">GitHub</a>
+    <a href="https://www.linkedin.com/in/alan-lienhard-921b31294/" target="_blank" class="btn">LinkedIn</a>
+    <button class="btn toggle-btn" onclick="toggleDarkMode()">🌓</button>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div class="main-container">
+            
+
+
+        <section id="about" class="section">
+            <h2>Über mich</h2>
+            <p>Ich bin begeistert von Computern und Technologien. Ich bin neugierig, daher lerne ich immer Neues. Durch Jahre langem Sport, zeige ich Durchhaltevermögen und Teamgeist.</p>
+            <p>Ich bin auch anpassungsfähig, ich bin also nicht an einzelne Technologien gebunden, ich lerne neue Technologien, um mit dem Fluss der Zeit mitzugehen.</p>
+            <p>Mein primäres Ziel ist es, mittels Softwarelösungen das Leben der Leute zu vereinfachen und Probleme zu lösen. Mein sekundäres Ziel ist es, mein Wissen und Können ständig zu erweitern.</p>
+            <p>Ich kann schon gut Full-Stack entwickeln und mit C#. Datenbanken liegen mir auch sehr gut.</p>
+
+        </section>
+        <section id="lebenslauf" class="section">
+        <div class="pdf-container">
+              <h2>Lebenslauf</h2>
+
+                <div class="pdf-actions">
+                    <a href="./Dokumente/Lebenslauf.pdf" download="Lebenslauf.pdf" class="btn download-btn">
+                        PDF Herunterladen
+                    </a>
+                </div>
+        </div>
+        </section>
+    <section id="projects" class="section">
+    <h2>Meine Projekte</h2>
+<div class="project-filters">
+    <button class="filter-btn active" data-filter="all">Alle</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="csharp">C#</button>
+</div>
+
+    <div class="timeline">
+        <div class="timeline-item" data-tags="web html css javascript">
+            <div class="timeline-content">
+                <h3>Kaffee Website</h3>
+                <p>Eine Onlineshop-Website, erstellt von mir und einem Partner bei einer Partnerarbeit.</p>
+                <div class="projec-links">
+                    <a class="github-links links" href="https://github.com/AmarNuhija/CoffeShop/tree/main" target="_blank">Code</a>
+                    <a class="demo-links links" href="https://coffeeshop-amarnuhija.netlify.app/" target="_blank">Demo</a>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item" data-tags="web html css javascript">
+            <div class="timeline-content">
+                <h3>Website LB</h3>
+                <p>Ich habe diese Website für die Leistungsbeurteilung vom Modul M293.</p>
+                 <div class="projec-links">
+                    <a class="github-links links" href="https://github.com/AlanLienhard/LB-M293-Website" target="_blank">Code</a>
+                    <a class="demo-links links" href="https://alan-lienhard-m293.netlify.app/" target="_blank">Demo</a>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item" data-tags="csharp dotnet">
+            <div class="timeline-content">
+                <h3>Schlafzyklus-Rechner</h3>
+                <p>Dies ist ein persönliches Projekt, es berechnet in der Konsole, wann man Schlafen gehen soll, um genug Schlaf zu kriegen.</p>
+                <div class="projec-links">
+                    <a class="github-links links" href="https://github.com/AlanLienhard/Schlafzyklus_Rechner/" target="_blank">Code</a>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item" data-tags="web html css javascript">
+            <div class="timeline-content">
+                <h3>Online-Library</h3>
+                <p>Dieses Projekt ermöglicht es Ihnen, eine eigene kleine Bibliothek bzw. Leseliste zu führen. Local Storage ermöglicht es Ihnen, die Liste im Browser zu speichern.</p>
+                <div class="projec-links">
+                    <a class="github-links links" href="https://github.com/AlanLienhard/Library" target="_blank">Code</a>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</section>
+
+</section>
+    <section id="skills" class="section">
+    <h2>Fähigkeiten</h2>
+    <div class="skills-container">
+        <div class="skill">
+            <label>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" class="skill-icon">
+                HTML
+            </label>
+            <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+        </div>
+        <div class="skill">
+            <label>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" class="skill-icon">
+                CSS
+            </label>
+            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+        </div>
+        <div class="skill">
+            <label>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon">
+                JavaScript
+            </label>
+            <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
+        </div>
+         <div class="skill">   
+            <label>
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/mysql.svg" alt="SQL" class="skill-icon">
+                SQL
+            </label>
+            <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
+        </div>
+         <div class="skill">   
+            <label>
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/mongodb.svg" alt="MongoDB" class="skill-icon">
+                MongoDB
+            </label>
+            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+        </div>
+         <div class="skill">   
+            <label>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cassandra/cassandra-plain.svg" alt="Cassandra" class="skill-icon">
+                Cassandra
+            </label>
+            <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+        </div>
+        <div class="skill">   
+            <label>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" class="skill-icon">
+                Git
+            </label>
+            <div class="skill-bar"><div class="skill-level" style="width: 70%"></div></div>
+        </div>
+        <div class="skill">
+            <label>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" class="skill-icon">
+                Docker
+            </label>
+            <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+        </div>
+        <div class="skill">
+            <label>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" class="skill-icon">
+                C#
+            </label>
+            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+        </div>
+        <div class="skill">
+            <label>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" class="skill-icon">
+                Linux
+            </label>
+            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+        </div>
+    
+            
+        <div class="skills-chart-container">
+    <canvas id="skills-chart"></canvas>
+</div>
+    </div>
+
+
+</section>
+ <section id="contact" class="section">
+    <h2>Kontaktformular</h2>
+    <form class="contact-form" action="https://formspree.io/f/mbloelao" method="POST">
+        <input type="text" name="name" placeholder="Dein Name" required>
+        <input type="email" name="_replyto" placeholder="Deine E-Mail" required>
+        <textarea name="message" placeholder="Deine Nachricht..." required></textarea>
+        <input type="hidden" name="_language" value="de" />
+        <button type="submit" class="btn">Absenden</button>
+    </form>
+    <div class="form-status"></div>
+</section>
+        </div>
+        
+    </main>
+    
+
+    <footer class="footer">
+        <p>© 2025 Alan Lienhard</p>
+    </footer>
+</body>
+</html>
