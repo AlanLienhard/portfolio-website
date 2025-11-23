@@ -61,8 +61,17 @@
     <button class="filter-btn" data-filter="web">Web</button>
         <button class="filter-btn" data-filter="csharp">C#</button>
 </div>
-
     <div class="timeline">
+    <div class="timeline-item" data-tags="web html css">
+        <div class="timeline-content">
+            <h3>Sign Up Form</h3>
+            <p>Ein Sign-Up Form, gestyled mit purem CSS.</p>
+            <div class="projec-links">
+                <a class="github-links links" href="https://github.com/AlanLienhard/sign-up-form" target="_blank">Code</a>
+                <a class="demo-links links" href="https://alanlienhard.github.io/sign-up-form/" target="https://alanlienhard.github.io/sign-up-form/">Demo</a>
+            </div>
+        </div>
+    </div>
         <div class="timeline-item" data-tags="web html css javascript">
             <div class="timeline-content">
                 <h3>Kaffee Website</h3>
@@ -190,13 +199,23 @@
 </section>
  <section id="contact" class="section">
     <h2>Kontaktformular</h2>
-    <form class="contact-form" action="https://formspree.io/f/mbloelao" method="POST">
-        <input type="text" name="name" placeholder="Dein Name" required>
-        <input type="email" name="_replyto" placeholder="Deine E-Mail" required>
-        <textarea name="message" placeholder="Deine Nachricht..." required></textarea>
-        <input type="hidden" name="_language" value="de" />
-        <button type="submit" class="btn">Absenden</button>
-    </form>
+    <div class="forms-container">
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="e404bf78-958c-4258-a7d1-c6d9744d2889">
+        <div class="form-container">
+            <label class="label-form" for="name">Ihr Name</label>
+            <input type="text" name="name" placeholder=" " required>
+        </div>
+        <div class="form-container">
+            <label class="label-form" for="email">Ihre E-Mail</label>
+            <input type="email" name="email" placeholder=" " required>
+        </div>
+        <div class="form-container">
+            <textarea name="message" placeholder="Ihre Nachricht "></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
     <div class="form-status"></div>
 </section>
         </div>

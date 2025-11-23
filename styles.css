@@ -359,3 +359,116 @@ body.dark-mode .skill-bar {
 }
 
 
+
+.forms-container {
+    margin-top: 10%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.form-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    opacity: 80%;
+    position: relative;
+}
+
+input, textarea {
+    border-width: 3px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 14px 14px;
+    color: black;
+    background: none;
+    outline: none;
+    resize: vertical;
+
+    appearance: none;
+     -webkit-appearance: none;
+  -moz-appearance: none;
+
+
+}
+
+input:focus {
+    border-color: cyan;
+
+}
+
+
+
+input:user-invalid {
+    border-color: red;
+}
+
+input:user-valid {
+    border-color: green;
+    
+}
+
+.label-form {
+    position: absolute;
+    left: 1rem;
+    top: 0.3rem;
+    padding: 5px;
+    cursor: text;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+    background-color: var(--bg-light);
+    color: black;
+}
+
+.label-form:has(+ input:focus), .label-form:has(+ textarea:focus), .label-form:has(+ input:not(:placeholder-shown)), .label-form:has(+ textarea:not(:placeholder-shown)){
+    top:-0.7rem;
+    font-size: 0.7rem;
+    left: 0.4rem;
+}
+
+
+button {
+    width: 220px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    color: white;
+    background-color: #124559;
+    border: 3px solid #124559;
+    border-radius: 10px;
+
+    transition: background-color 0.25s ease, transform 0.25s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0e3542;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+body.dark-mode .label-form {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}
+
+body.dark-mode .label-form:has(+ input:focus),
+body.dark-mode .label-form:has(+ textarea:focus),
+body.dark-mode .label-form:has(+ input:not(:placeholder-shown)),
+body.dark-mode .label-form:has(+ textarea:not(:placeholder-shown)) {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}
+
