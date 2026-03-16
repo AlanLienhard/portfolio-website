@@ -242,6 +242,13 @@ body.dark-mode .info-grid > div {
     margin-top: 3rem;
 }
 
+.footer-icons {
+    margin-bottom: 0.6rem;
+}
+.footer-icons a {
+    margin: 0 10px;
+}
+
 body.dark-mode .footer {
     background-color: #333;
 }
@@ -470,5 +477,24 @@ body.dark-mode .label-form:has(+ input:not(:placeholder-shown)),
 body.dark-mode .label-form:has(+ textarea:not(:placeholder-shown)) {
     background-color: var(--bg-dark);
     color: var(--text-light);
+}
+
+
+
+.linked-icon i{
+    font-size: 40px;
+    transition: transform 0.5s ease, color 0.3s ease;
+}
+
+.linked-icon:hover i{
+    transform: rotate(360deg);
+}
+
+.github-icon:hover {
+    color: white;
+}
+
+.linkedin-icon:hover {
+    color: #0A66C2;
 }
 
